@@ -36,10 +36,17 @@
         <label class="visually-hidden" for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
       </div>
       <div class="field">
-        <input class="field__input" type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
+        <input 
+               class="field__input required invalid" 
+               type="text" 
+               id="ShippingEstimateZip" 
+               name="shipping_address[zip]" 
+               value="{{ form.zip }}" 
+               autocapitalize="characters"
+               autocomplete="postal-code" 
+               placeholder="{{ 'customer.addresses.zip' | t }}">
         <label 
                class="visually-hidden" 
-               placeholder="Postal/ZIP code"
                for="ShippingEstimateZip"
                >
           {{ 'customer.addresses.zip' | t }}
