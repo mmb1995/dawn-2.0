@@ -18,9 +18,7 @@
              >
               {{ country_option_tags }}
             </select>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-              <use href="#icon-caret" />
-            </svg>
+            {% render 'icon-caret' %}
          </div>
          <label for="ShippingEstimateCountry">{{ 'customer.addresses.country' | t }}</label>
        </div>
@@ -33,9 +31,7 @@
              autocomplete="address-level1"
            >
            </select>
-           <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-             <use href="#icon-caret" />
-           </svg>
+           {% render 'icon-caret' %}
         </div>
         <label for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
       </div>
