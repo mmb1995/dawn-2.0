@@ -1,4 +1,4 @@
-<div class="customer" id="main-cart-shipping" data-id="{{ section.id }}">
+<div id="main-cart-shipping" data-id="{{ section.id }}">
   <svg style="display: none">
     <symbol id="icon-caret" viewBox="0 0 10 6">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -7,8 +7,7 @@
   <div id="ShippingRatesEstimator">
     <shipping-rates-estimator>
       <form id="ShippingRatesEstimateForm">
-        <div>
-          <label for="ShippingEstimateCountry">{{ 'customer.addresses.country' | t }}</label>
+        <div class="field">
           <div class="select">
             <select
               id="ShippingEstimateCountry"
@@ -21,31 +20,32 @@
             <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
               <use href="#icon-caret" />
             </svg>
-          </div>
+         </div>
+         <label for="ShippingEstimateCountry">{{ 'customer.addresses.country' | t }}</label>
+       </div>
+	   <div id="ShippingEstimateProvinceContainer" class="field">
+         <div class="select">
+           <select
+             id="ShippingEstimateProvince"
+             name="shipping_address[province]"
+             autocomplete="address-level1"
+           >
+           </select>
+           <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+             <use href="#icon-caret" />
+           </svg>
         </div>
-        <div id="ShippingEstimateProvinceContainer">
-          <label for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>
-          <div class="select">
-            <select
-              id="ShippingEstimateProvince"
-              name="shipping_address[province]"
-              autocomplete="address-level1"
-            >
-            </select>
-            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-              <use href="#icon-caret" />
-            </svg>
-          </div>
-        </div>
-        <div class="field">
-          <input type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
-          <label for="ShippingEstimateZip">{{ 'customer.addresses.zip' | t }}</label>
-        </div>
-        <div>
-          <button type="button">Estimate</button>
-        </div>
-      </form>
-      <div id="shipping-rates-results-container" class="shipping-rates__results"></div>
-   </shipping-rates-estimator>
-  </div>
+        <label for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
+      </div>
+      <div class="field">
+        <input type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
+        <label for="ShippingEstimateZip">{{ 'customer.addresses.zip' | t }}</label>
+      </div>
+      <div>
+      	<button type="button">Estimate</button>
+      </div>
+    </form>
+    <div id="shipping-rates-results-container" class="shipping-rates__results"></div>
+  </shipping-rates-estimator>
+ </div>
 </div>
