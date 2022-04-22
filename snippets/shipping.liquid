@@ -1,3 +1,10 @@
+{% style %}
+ .shipping-rates__estimator .field {
+	margin-top: 2rem;
+ }
+
+{% endstyle %}
+
 <div id="main-cart-shipping" data-id="{{ section.id }}">
   <svg style="display: none">
     <symbol id="icon-caret" viewBox="0 0 10 6">
@@ -5,7 +12,7 @@
     </symbol>
   </svg>
   <div id="ShippingRatesEstimator">
-    <shipping-rates-estimator>
+    <shipping-rates-estimator class="shipping-rates__estimator">
       <form id="ShippingRatesEstimateForm">
         <div class="field">
           <div class="select">
