@@ -258,10 +258,7 @@
                 {% render 'icon-caret' %}
               </span>
             </summary>
-            <cart-note id="cart-drawer-note" class="cart__note field">
-              <label class="visually-hidden" for="drawer-Cart-note">{{ 'sections.cart.note' | t }}</label>
-              {% render 'shipping' %}
-            </cart-note>
+            {% render 'shipping' %}
           </details>
         {%- endif -%}
 
