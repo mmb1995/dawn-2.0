@@ -10,6 +10,7 @@
         <div class="field">
           <div class="select">
             <select
+              class="select__select"
               id="ShippingEstimateCountry"
               name="shipping_address[country]"
               data-default="United States"
@@ -26,6 +27,7 @@
 	   <div id="ShippingEstimateProvinceContainer" class="field">
          <div class="select">
            <select
+             class="select__select"
              id="ShippingEstimateProvince"
              name="shipping_address[province]"
              autocomplete="address-level1"
@@ -38,7 +40,7 @@
         <label for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
       </div>
       <div class="field">
-        <input type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
+        <input class="field__input" type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
         <label for="ShippingEstimateZip">{{ 'customer.addresses.zip' | t }}</label>
       </div>
       <div>
