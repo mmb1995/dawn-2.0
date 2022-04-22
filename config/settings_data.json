@@ -97,6 +97,7 @@
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
     "cart_type": "drawer",
+    "show_cart_note": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -183,6 +184,11 @@
         "type": "main-password-footer",
         "settings": {
           "color_scheme": "background-1"
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
+        "settings": {
         }
       }
     },
