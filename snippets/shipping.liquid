@@ -20,7 +20,7 @@
             </select>
             {% render 'icon-caret' %}
          </div>
-         <label for="ShippingEstimateCountry">{{ 'customer.addresses.country' | t }}</label>
+         <label class="visually-hidden" for="ShippingEstimateCountry">{{ 'customer.addresses.country' | t }}</label>
        </div>
 	   <div id="ShippingEstimateProvinceContainer" class="field">
          <div class="select">
@@ -33,11 +33,11 @@
            </select>
            {% render 'icon-caret' %}
         </div>
-        <label for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
+        <label class="visually-hidden" for="ShippingEstimateProvince">{{ 'customer.addresses.province' | t }}</label>       
       </div>
       <div class="field">
         <input class="field__input" type="text" id="ShippingEstimateZip" name="shipping_address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
-        <label for="ShippingEstimateZip">{{ 'customer.addresses.zip' | t }}</label>
+        <label class="visually-hidden" for="ShippingEstimateZip">{{ 'customer.addresses.zip' | t }}</label>
       </div>
       <div>
       	<button type="button">Estimate</button>
