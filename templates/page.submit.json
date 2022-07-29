@@ -20,7 +20,7 @@
     "1659057348fa25efb8": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div>\n<label><\/label>\n<input type=\"file\" accept=\".jpg,.jpeg,.png\" \/>\n<\/div>",
+        "custom_liquid": "{ets_cf_jZx}",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
