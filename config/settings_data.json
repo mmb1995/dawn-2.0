@@ -191,7 +191,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "807785498547235276": {
+        "type": "shopify:\/\/apps\/contact-form-ultimate\/blocks\/app-embed-block\/7f36c127-5e2b-4909-bcc7-2631483e37a4",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
