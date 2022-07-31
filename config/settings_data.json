@@ -96,7 +96,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "page",
+    "cart_type": "drawer",
     "cart_drawer_collection": "goth",
     "sections": {
       "announcement-bar": {
